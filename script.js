@@ -22,9 +22,7 @@ for (const item of showModalWindows) {
 }
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    if (!modalWindow.classList.contains('hidden')) {
-      closeModalWindow();
-    }
+  if (e.key === 'Escape' && !modalWindow.classList.contains('hidden')) {
+    closeModalWindow();
   }
 });
